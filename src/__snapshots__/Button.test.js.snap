@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check  renderer should display button 1`] = `
+<div>
+  <button
+    type="button"
+  />
+</div>
+`;
