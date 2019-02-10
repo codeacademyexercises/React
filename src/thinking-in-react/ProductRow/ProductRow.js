@@ -9,7 +9,7 @@ class ProductRow extends Component{
                 if(element.stocked===true){
                 products.push(<tr key={element.Name}><td>{element.Name}</td><td>${element.Price}</td></tr>);
                 }else{
-                    products.push(<tr key={element.Name}><td className="NotInStock">{element.Name}</td><td>${element.Price}</td></tr>);
+                products.push(<tr key={element.Name}><td className="NotInStock">{element.Name}</td><td>${element.Price}</td></tr>);
                 }
             }
         });

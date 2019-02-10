@@ -15,5 +15,10 @@ describe("<ProductRow /> should ",()=>{
     it("render",()=>{
         const tree = renderer.create(<ProductRow items={store} category="Sporting Goods"/>).toJSON();
         expect(tree).toMatchSnapshot();
-    })
+    });
+    it("display correct set of products",()=>{
+        const wrapper = shallow(<ProductRow items={store} category="Sporting Goods"/>);
+        expect(wrapper.find('.NotInStock')).toHaveLength(1);
+        expect(wrapper.find('tr')).toHaveLength(3);
+    });
 });
