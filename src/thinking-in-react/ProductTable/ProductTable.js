@@ -35,14 +35,9 @@ class ProductTable extends Component{
         let instock = this.props.stock;
         let result = this.InterestedItems(regex,instock);
         let categories = this.Categories(result);
-        // this.handleCategories(categories);
-        // console.log(categories);
         if(result.length===0){
             display="Srry No Items Found...";
         }else{
-            // display = (
-            // <ProductCategoryRow categories={this.state.categories}/>
-            // );
             display = [];
             categories.forEach((category)=>{
                 display.push(<ProductCategoryRow key={category} category={category} product={result}/>);
