@@ -3,13 +3,12 @@ import '../App/App.css';
 
 class SearchBar extends Component{
     render(){
-        // console.log(this.props.search);
         return(
             <div className="SearchBarContainer">
-                <div className="SearchBar">
+                <div>
                     <input type="search" placeholder="Search..." id="searchBar" defaultValue={this.props.search} onChange={this.props.SearchInput}/>
                 </div>
-                <div className="checkbox">
+                <div>
                     <input type="checkbox" id="inStock" defaultValue={this.props.stock} onChange={this.props.InStock}/>
                     <label >Only show products in stock</label>
                 </div>

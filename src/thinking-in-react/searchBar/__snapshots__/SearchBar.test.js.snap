@@ -4,18 +4,14 @@ exports[`Checking  Snapshot test will work 1`] = `
 <div
   className="SearchBarContainer"
 >
-  <div
-    className="SearchBar"
-  >
+  <div>
     <input
       id="searchBar"
       placeholder="Search..."
       type="search"
     />
   </div>
-  <div
-    className="checkbox"
-  >
+  <div>
     <input
       id="inStock"
       type="checkbox"
