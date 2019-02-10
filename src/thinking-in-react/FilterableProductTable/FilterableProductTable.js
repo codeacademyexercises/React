@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SearchBar from '../searchBar/SearchBar.js';
 import ProductTable from '../ProductTable/ProductTable.js';
+// const help = require('../HelperFunctions/helper.js');
 
 class FilterableProductTable extends Component {
     constructor(props) {
@@ -18,7 +19,6 @@ class FilterableProductTable extends Component {
         this.setState({inStock: !inStock});
     }
   render() {
-    // console.log(this.state.search);
     return (
         <div>
             <SearchBar search={this.state.search} stock={this.state.inStock} SearchInput={this.SearchInput} InStock={this.InStock}/>

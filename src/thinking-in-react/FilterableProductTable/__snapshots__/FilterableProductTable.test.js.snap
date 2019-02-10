@@ -5,9 +5,7 @@ exports[`FilterableProductTable should  render 1`] = `
   <div
     className="SearchBarContainer"
   >
-    <div
-      className="SearchBar"
-    >
+    <div>
       <input
         defaultValue=""
         id="searchBar"
@@ -16,9 +14,7 @@ exports[`FilterableProductTable should  render 1`] = `
         type="search"
       />
     </div>
-    <div
-      className="checkbox"
-    >
+    <div>
       <input
         defaultValue={true}
         id="inStock"
